@@ -106,9 +106,23 @@
                                 <!-- <a href="/edit/{{ $contact->id }}" class="btn btn-edit">Edit</a> -->
                                 <a href="{{ route('phone-book/edit',$contact->id) }}" class="btn btn-edit">Edit</a> 
                                
-                               <a href="/edit/{{$contact->id}}"></a>
+                               <!-- <a href="/edit/{{$contact->id}}"></a> -->
                                
-                                <a href="" class="btn btn-view">delete</a>
+                                <!-- <a href="{{route('phone-bookd.destroy',$contact->id)}}" class="btn btn-view">delete</a> -->
+
+                                <form action="{{ route('phone-bookd.destroy', $contact->id) }}"
+                                        method="POST"
+                                        style="display:inline;">
+                                        @csrf
+                                        @method('DELETE')
+
+                                        <button type="submit"
+                                                class="btn btn-danger"
+                                                style="color:black"
+                                                onclick="return confirm('Are you sure you want to delete?')">
+                                            Delete
+                                        </button>
+                                    </form>
                             </div>
                         </td>
                     </tr>

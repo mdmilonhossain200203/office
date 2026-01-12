@@ -23,3 +23,6 @@ Route::put('/phone-book/{id}',[PhoneBookController::class, 'update'])->name('pho
 
 
 //Route::get('{id}', [PhoneBookController::class, 'edit']);
+
+
+Route::DELETE('/phone-bookd/{id}',[PhoneBookController::class, 'destroy'])->name('phone-bookd.destroy');

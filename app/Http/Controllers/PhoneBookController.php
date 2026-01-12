@@ -103,8 +103,9 @@ class PhoneBookController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(PhoneBook $phoneBook)
+    public function destroy(PhoneBook $phoneBook, $id)
     {
-        //
+     dd("hello ");
+       //$contacts = PhoneBook::find($id);
     }
 }
