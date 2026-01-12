@@ -1,0 +1,162 @@
+
+
+  //header button ==
+ .theme-btn--primary-inverse {
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+ 
+}
+  
+
+
+/*list iteme  hover effce--------------------for all-----*/ 
+
+.user-items-list-simple .list-item {    border-radius: 12px !important;  
+                                    transition: all 0.3s ease !important;        
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important; 
+  cursor: pointer !important;                  
+}
+
+.user-items-list-simple .list-item:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2) !important; 
+  transform: translateY(-3px) !important;             
+}
+
+.list-item-media-inner {
+    transform: translate(0, 0) !important;
+    border-radius: 10px 10px  0 0 ;
+}
+
+
+
+
+
+
+// client reviews sectins
+
+
+
+/* ================================================
+   Carousel Card CSS — Optimized
+   ================================================ */
+
+/* General Card Style */
+.list-item,
+li.user-items-list-carousel__slide.list-item.list-item-basic-animation {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  
+  position: relative; /* Needed for pseudo-elements */
+  padding: 100px 0;  /* Adjust vertical padding as needed */
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+/* Hover Effect */
+.list-item:hover,
+li.user-items-list-carousel__slide.list-item.list-item-basic-animation:hover {
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+/* Inner Media Border Radius */
+.user-items-list-simple .list-item,
+li.user-items-list-carousel__slide.list-item.list-item-basic-animation 
+  .list-item-media-inner.preFlex.flexIn {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+/* Decorative Pseudo-element (Top Right Shape) */
+li.user-items-list-carousel__slide.list-item.list-item-basic-animation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 100px;
+  background: #12a0db;
+  z-index: 0;
+  border-radius: 10px;
+  transform: translate(80px, -50px) rotate(40deg);
+}
+
+
+// line shape---
+
+#block-yui_3_17_2_1_1764934567136_5573 ,#block-2a0220ea2e668c29c7b7{
+  width:3px ;
+}
+
+
+
+//faq================
+.accordion-item__click-target{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  padding:30px 20px!important;
+  border-radius:5px;
+  margin: 20px 0;
+  
+}
+  
+
+
+
+
+
+
+
+
+
+//===procuc listing page card desing===================
+  
+
+.product-list-item {
+  background:#fff !important;
+  display: block; /* makes the card clickable */
+
+  border-radius: 10px !important;
+  padding: 16px;
+  box-shadow: 0px 1px 3px #12a0db;
+  transition: all 0.3s ease !important;
+
+}
+
+.product-list-item:hover {
+
+  transform: translateY(-4px)!important;
+}
+
+.product-list-item-price{
+  color:#12a0db !important;
+  margin-bottom:8px;
+  font-size:18px !important;
+  font-weight: bold !important;
+}
+
+.grid-image-wrapper img {
+  border-radius: 3px;
+}
+
+.product-price-value{
+  color:#12a0db !important;
+}
+.product-quantity-input{
+  border-radius: 10px !important;
+}
+
+/*
+
+.product-list {
+    padding: 70px auto !important;
+  
+
+}
+
+@media (max-width: 767px) {
+    .product-list {
+        padding: 30px auto !important;
+    }
+}
+*/
